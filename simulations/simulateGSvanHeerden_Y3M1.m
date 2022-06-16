@@ -32,9 +32,9 @@ setup.sim1_ixp_off = 1;
 Y = Y_ic2ss;
 calcFluxes_consensus_Y3M1;
 V_ic2ss = v;
-tspan = [0:1:340];
 
 % simulation 2: extracellular glucose 110 mM concentration perturbation
+tspan = [0:1:340];
 f.GLCo = 110; % increase extracellular glucose concnetration (step, fixed) upon 110 mM glucose perturbation
 Y_ic2ss(end,27) = 25; % Increased cytosolic inorganic phosphate upon 110 mMglucose perturbation
 setup.increase_Katpase = 1; % ATPase activity is increased

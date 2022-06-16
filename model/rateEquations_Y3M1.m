@@ -333,4 +333,4 @@ else % steady state simulations
     ADPATP_RATIO = ADP_RATIO ./ ATP_RATIO;
     v_ATPase = GAMNGAM(experiment) .* ATP ./ ADP .* ADPATP_RATIO(experiment);
 end
-    
+
